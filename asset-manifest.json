@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react_upload/static/css/main.608d3600.css",
+    "main.js": "/react_upload/static/js/main.edd5363f.js",
+    "static/media/self-pic.svg": "/react_upload/static/media/self-pic.fa61a055ee9b3f7195eed5f8466abccb.svg",
+    "static/media/cryptoWesearch.png": "/react_upload/static/media/cryptoWesearch.69e46f1874b1011e0411.png",
+    "static/media/educationbg2.svg": "/react_upload/static/media/educationbg2.a7ca92d6ecc76f72d5993158832eec62.svg",
+    "static/media/Group 2.svg": "/react_upload/static/media/Group 2.4fde8cb7cc8ecd2c71684ea549328b40.svg",
+    "static/media/Group 3.svg": "/react_upload/static/media/Group 3.4fde8cb7cc8ecd2c71684ea549328b40.svg",
+    "index.html": "/react_upload/index.html",
+    "static/media/aboutBg.svg": "/react_upload/static/media/aboutBg.78c29c30dd2236c1fd2a91d6678c20be.svg",
+    "static/media/plus.svg": "/react_upload/static/media/plus.dc424d02708322217c9c0789be0bc123.svg",
+    "main.608d3600.css.map": "/react_upload/static/css/main.608d3600.css.map",
+    "main.edd5363f.js.map": "/react_upload/static/js/main.edd5363f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.608d3600.css",
+    "static/js/main.edd5363f.js"
+  ]
+}
