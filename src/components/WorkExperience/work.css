@@ -1,0 +1,69 @@
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.title p{
+    font-weight: 300;
+}
+.title h2{
+    border-bottom: 1px solid black;
+}
+.title p{
+    padding-top: 1rem;
+}
+
+.slide{
+   width: 60%;
+    padding: 4rem 0;
+
+}
+.swiper-scrollbar{
+    display: none;
+  }
+
+.swiper-button-prev{
+
+    color: #6386BB;
+    left: 0;
+    width: 7%;
+    transition: all 0.2s ease-in-out;
+}
+.swiper-button-prev:hover{
+    color: #FFB6B6;
+}
+
+.swiper-button-next{
+  
+    color: #6386BB;
+    right: 0;
+    transition: all 0.2s ease-in-out;
+}
+.swiper-button-next:hover{
+    color: #FFB6B6;
+}
+
+.card{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.img-con{
+    position: relative;
+    display: flex;
+}
+
+img.bg1{
+    position: absolute;
+    left: 17%;
+    width: 13%;
+}
+img.bg2{
+    position: absolute;
+    right: 17%;
+    bottom: -530px;
+    width: 11.5%;
+}

@@ -1,0 +1,35 @@
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.mediaLogo-con{
+    padding-top: 0.7rem;
+    font-size: 2rem;
+
+}
+.mediaLogo{
+   margin: 0rem 2rem;
+   text-decoration: none;
+   color: white;
+}
+
+.footerLink{
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.footerLi{
+    display: flex;
+    padding: 0.1rem 2rem 0rem 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.footerLi:hover{
+    cursor: pointer;
+    color: #9cbbeb;
+}
