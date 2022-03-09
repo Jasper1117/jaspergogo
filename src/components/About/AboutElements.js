@@ -35,7 +35,8 @@ const AboutElements = () => {
           <h2>Hiello! I'm</h2>
           <h1 className="typing">Jasper Xu</h1>
          
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum nihil nisi voluptatem asperiores tempore necessitatibus possimus iusto. Nesciunt, deserunt praesentium.</p>
+            <p>People always say never too late to learn. I will say never too late to <b>learn and change.</b></p>
+            <p>I work as a video director in the pass few years. However, I'm trying to become a frontend developer. I learned coding by myself in the pass few months. This web is the final result of my self-learning. </p>
             <NavLink to="/contact" className="contact" > Contact
   
              </NavLink>
@@ -131,7 +132,8 @@ const AboutElementStyle = styled.div`
       height: 5vh;
       margin: 2rem 0rem;
        border-radius: 50px;
-       background-color: #7aa1db;
+       outline: 1px solid white;
+       /* background-color: #7aa1db; */
        padding: 0.3rem 1.2rem;
        color: white;
        text-decoration: none;

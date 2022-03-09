@@ -1,13 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import education from "../Education/EducationInfo"
 import EducationElements from './EducationElements';
 import educationbg from "../../img/educationbg2.svg"
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 const Education = () => {
+
+        Aos.init({duration:300});
+
   return <EducationStyled id="educations">
-        <div className="title">
+        <div data-aos="fade-up" className="title">
               <h2>Education</h2>
           </div>
       <div className="education-con">

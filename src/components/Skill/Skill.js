@@ -4,13 +4,15 @@ import styled from 'styled-components';
 import 'react-tabs/style/react-tabs.css';
 import Skill1 from './Skill1';
 import Skill2 from './Skill2';
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Skill = () => {
+    Aos.init({duration:1000});
   return <SkillStyled id="skills">
-      <h2>What I can handle</h2>
+      <h2 data-aos="fade-up">What I can handle</h2>
         <div className="tabs">
-        <Tabs>
+        <Tabs data-aos="fade-up">
             <div className="tableTitle">
                 <TabList>
                 <Tab>Front End</Tab>

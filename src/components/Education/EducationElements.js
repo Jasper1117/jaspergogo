@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Plus from '../../img/plus.svg';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const EducationElements = ({year, school, description}) => {
     const [toggle, setToggle] = useState(false);
@@ -8,10 +10,10 @@ const EducationElements = ({year, school, description}) => {
         setToggle(!toggle);
     }
 
-
+    Aos.init({duration:1000});
   return <EducationElementStyle>
 
-      <div className="education-con">
+      <div data-aos="fade-up"className="education-con">
           <div className="info">
               <div className="info-year">
                 <p>{year}</p>
