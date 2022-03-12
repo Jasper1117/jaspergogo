@@ -33,12 +33,12 @@ footer{
     display: flex;
     flex-direction: row;
 }
-.footerLi .contact{
+.footerLi .contactFooter{
     text-decoration: none;
     color: white;
     transition: all 0.3s ease-in-out;
 }
-.footerLi .contact:hover{
+.footerLi .contactFooter:hover{
     cursor: pointer;
     color: #9cbbeb;
 }

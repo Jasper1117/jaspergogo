@@ -4,21 +4,21 @@ import{FaFacebook, FaYoutube} from "react-icons/fa"
 import{AiFillInstagram} from "react-icons/ai"
 import {NavLink} from "react-router-dom"
 import { Link } from 'react-scroll';
-import "./footer.css"
+import "./ContactFooter.css"
 
-const FooterCon = () => {
-  return <FooterStyled>
+const ContactFooter = () => {
+  return <ContactFooterStyled>
       <footer>
           <div className="footerLink-con">
             <ul className='footerLink'>
               <div className="footerlink1">
-                <li className='footerLi'><Link to="about" smooth={true} duration={500}> About </Link></li>
-                <li className='footerLi'><Link to="educations" smooth={true} duration={500}> Educations </Link></li>
-                <li className='footerLi'><Link to="working" smooth={true} duration={500}>Experiences</Link></li>
+                <li className='footerLi'><NavLink to="/" className="contactFooter" smooth={true} duration={500}> About </NavLink></li>
+                <li className='footerLi'><NavLink to="/" className="contactFooter" smooth={true} duration={500}> Educations </NavLink></li>
+                <li className='footerLi'><NavLink to="/" className="contactFooter" smooth={true} duration={500}>Experiences</NavLink></li>
               </div>
               <div className="footerlink2">
-              <li className='footerLi'><Link to="skills" smooth={true} duration={500}> Skills </Link></li>
-              <li className='footerLi'><NavLink to="/contact" className="contact" mooth={true} duration={500}> Contact </NavLink></li>
+              <li className='footerLi'><NavLink to="/" className="contactFooter"smooth={true} duration={500}> Skills </NavLink></li>
+              <li className='footerLi'><NavLink to="/contact" className="contactFooter" mooth={true} duration={500}> Contact </NavLink></li>
               </div>
             </ul>
           </div>
@@ -31,10 +31,10 @@ const FooterCon = () => {
           </div>
       </footer>
 
-  </FooterStyled>;
+  </ContactFooterStyled>;
 };
 
-const FooterStyled = styled.div`
+const ContactFooterStyled = styled.div`
 width: 100%;
 
 background-color: #62616D;
@@ -43,4 +43,4 @@ font-weight: 300;
 
 `;
 
-export default FooterCon;
+export default ContactFooter;
