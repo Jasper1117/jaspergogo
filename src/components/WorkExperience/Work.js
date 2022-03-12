@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import WorkElements from './WorkElements';
 import work from "../WorkExperience/WorkElementDetail"
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -55,46 +54,5 @@ const Work = () => {
 
 };
 
-
-
-// const WorkingStyled = styled.div`
-
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-    
-//     .work-title{
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-//         padding-bottom: 2rem;
-//     }
-//     .card-con{
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         margin: 1rem;
-        
-
-//     }
-// `;
-
 export default Work;
 
-
-
-//   <WorkingStyled id="working">
-//       <div className="work-title">   
-//           <h2>Working Experiences</h2>
-//           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, esse!</p>
-//       </div>
-//       <div className="card-con">
-    //   {
-    //       work.map((q)=>{
-    //           return <WorkElements key={q.id} {...q}/>
-    //       })
-    //   }
-//       </div>
-//   </WorkingStyled>;

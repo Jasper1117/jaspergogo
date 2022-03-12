@@ -22,15 +22,14 @@ const Education = () => {
               })
           }
       </div>
-      <div className="educationbg">
-        <img src={educationbg} alt="" className='edu-bg'/>
-      </div>
+
  
   </EducationStyled>;
 };
 
 const EducationStyled = styled.div`
     display: flex;
+    height: 60vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -40,20 +39,7 @@ const EducationStyled = styled.div`
     .title h2{
         border-bottom: 1px solid black;
     }
-  
-    .educationbg{
-        display: flex;
-        position: absolute;
-        left: 0;
-        top: 30%;
-        border-bottom: 1px dotted black;
-        padding-left: 30px;
-        img.edu-bg{
-            width: 50%;
-        }
-    }
-    
-`
+`;
 
 
 export default Education;

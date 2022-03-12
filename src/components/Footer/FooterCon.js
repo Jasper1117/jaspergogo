@@ -11,11 +11,15 @@ const FooterCon = () => {
       <footer>
           <div className="footerLink-con">
             <ul className='footerLink'>
-              <li className='footerLi'><Link to="about" smooth={true} duration={500}> About </Link></li>
-              <li className='footerLi'><Link to="educations" smooth={true} duration={500}> Educations </Link></li>
-              <li className='footerLi'><Link to="working" smooth={true} duration={500}>Experiences</Link></li>
+              <div className="footerlink1">
+                <li className='footerLi'><Link to="about" smooth={true} duration={500}> About </Link></li>
+                <li className='footerLi'><Link to="educations" smooth={true} duration={500}> Educations </Link></li>
+                <li className='footerLi'><Link to="working" smooth={true} duration={500}>Experiences</Link></li>
+              </div>
+              <div className="footerlink2">
               <li className='footerLi'><Link to="skills" smooth={true} duration={500}> Skills </Link></li>
               <li className='footerLi'><Link to="contact" smooth={true} duration={500}> Contact </Link></li>
+              </div>
             </ul>
           </div>
 
@@ -32,10 +36,11 @@ const FooterCon = () => {
 
 const FooterStyled = styled.div`
 width: 100%;
-height: 13vh;
+
 background-color: #62616D;
 margin-top: 3rem;
 font-weight: 300;
+
 `;
 
 export default FooterCon;

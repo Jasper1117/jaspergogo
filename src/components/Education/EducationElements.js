@@ -26,7 +26,9 @@ const EducationElements = ({year, school, description}) => {
               </button>
           </div>
           <div className="info-dis">
-          {toggle && <p>{description}</p>}
+      
+          {toggle&&<p>{description}</p>}
+       
           </div>
             
       </div>
@@ -62,10 +64,19 @@ width: 700px;
     }
     .info-dis{
         display: flex;
-        align-items: center;
         justify-content: center;
         
     }
+    @media screen and (max-width:710px){
+        width:600px
+    }
+    @media screen and (max-width:560px){
+        width:500px
+    }
+    @media screen and (max-width:460px){
+        width:450px
+    }
+
 `;
 
 

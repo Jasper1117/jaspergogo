@@ -62,6 +62,9 @@ const SkillStyled = styled.div`
         box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.2);
         
     }
+    @media screen and (max-width:800px){
+        height: 100vh;
+    }
 
 `;
 

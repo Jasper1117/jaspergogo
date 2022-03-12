@@ -72,7 +72,7 @@ function ContactForm2() {
 
 const FormStyled = styled.form`
 
-    width: 100%;
+
     padding: 1rem;
         border-radius: 20px;
         box-shadow: 1px 2px 10px -2px rgba(0, 0, 0, 0.2);
@@ -120,6 +120,13 @@ const FormStyled = styled.form`
             background-color: #333333;
             color: white;
         }
+    }
+    @media screen and (max-width:500px){
+        textarea{
+            max-width: 350px;
+            min-width: 350px;
+        }
+        
     }
 `;
 

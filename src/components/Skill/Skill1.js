@@ -1,8 +1,7 @@
 import React from 'react';
 import "./skill1.css"
-import { FaReact, FaHtml5 } from 'react-icons/fa';
-import { DiCss3 } from 'react-icons/di';
-import { SiJavascript } from 'react-icons/si';
+import { DiCss3, DiHtml5, DiReact,DiJavascript1 } from 'react-icons/di';
+
 
 
 
@@ -11,7 +10,7 @@ const Skill1 = () => {
       <div className='fontEnd'>
     <div className="left">
         <div className="react">
-           <div className='frontEndLogo'> <FaReact/></div>
+           <div className='frontEndLogo'> <DiReact/></div>
             <div className="bar">
                 <div className="react-outer"></div>
                 <div className="react-inner"></div>
@@ -19,7 +18,7 @@ const Skill1 = () => {
         </div>
         <div className="html">
              <div className='frontEndLogo'>
-            <FaHtml5/>
+            <DiHtml5/>
             </div>
             <div className="bar">
                 <div className="html-outer"></div>
@@ -41,7 +40,7 @@ const Skill1 = () => {
         </div>
         <div className="js">
             <div className='frontEndLogo'>
-            <SiJavascript/>
+            <DiJavascript1/>
             </div>
             <div className="bar">
                 <div className="js-outer"></div>

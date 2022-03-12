@@ -32,14 +32,14 @@ const AboutElements = () => {
             <img src={self} alt="" />
           </div>
           <div className="about-right">
-          <h2>Hiello! I'm</h2>
-          <h1 className="typing">Jasper Xu</h1>
-         
-            <p>People always say never too late to learn. I will say never too late to <b>learn and change.</b></p>
-            <p>I work as a video director in the pass few years. However, I'm trying to become a frontend developer. I learned coding by myself in the pass few months. This web is the final result of my self-learning. </p>
-            <NavLink to="/contact" className="contact" > Contact
-  
-             </NavLink>
+            <h2>Hiello! I'm</h2>
+            <h1 className="typing">Jasper Xu</h1>
+          
+              <p>People always say never too late to learn. I will say never too late to <b>learn and change.</b></p>
+              <p className='aboutMe2'>I work as a video director in the pass few years. However, I'm trying to become a frontend developer. I learned coding by myself in the pass few months. This web is the final result of my self-learning. </p>
+              <NavLink to="/contact" className="contact" > Contact
+    
+              </NavLink>
           </div>
           
       </div>
@@ -50,7 +50,7 @@ const AboutElements = () => {
 const AboutElementStyle = styled.div`
     background-color: #3F3D56;
     color:white ;
-
+    width: 100%;
   .about-con{
     display: flex;
     align-items: center; 
@@ -66,6 +66,7 @@ const AboutElementStyle = styled.div`
         width: 60%;
       }
     }
+
     .about-right{
       width: 50%;
       display: flex;
@@ -146,5 +147,47 @@ const AboutElementStyle = styled.div`
        }
   }
 }
+
+@media screen and (max-width:911px){
+      .about-left{
+      width: 50%;
+      padding-left: 5rem;
+      display: flex;
+      }
+      .about-right{
+      h1{
+        font-size: 4rem;
+      }
+      }
+    }
+
+    @media screen and (max-width:600px){
+      .about-con{
+        padding-top: 6rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .about-left{
+        padding-left: 0rem;
+        justify-content: center;
+        padding-bottom: 1rem;
+      img{
+        max-width: 200%;
+        height: auto;
+      }
+      }
+      .about-right{
+        padding-right: 0rem;
+        justify-content: center;
+        align-items: center;
+        .aboutMe2{
+          display: none;
+        }
+
+      }
+      }
+      
+     
+    }
 `;
 export default AboutElements;

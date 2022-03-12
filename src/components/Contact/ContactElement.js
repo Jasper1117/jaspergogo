@@ -24,9 +24,7 @@ const ContactElement = () => {
 
 const ContactStyled = styled.div`
     width: 100%;
-    height: 100vh;
    
-    
     .ContactTop{
       display: flex;
       flex-direction: column;
@@ -53,7 +51,18 @@ const ContactStyled = styled.div`
     .contact-right{
       padding: 2rem;
     }
-
+    @media screen and (max-width:900px){
+      .contactWrapper{
+        flex-direction: column;
+        
+      }
+      .contact-left{
+        border-right: none;
+      }
+      .contact-right{
+        padding: 0;
+      }
+    }
 `;
 
 export default ContactElement;
