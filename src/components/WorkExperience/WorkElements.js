@@ -36,10 +36,12 @@ img{
 
 }
 .card-con{
-  width: 70%;
+  width: 300px;
   border-radius : 30px;
   background-color: #3F3D56;
   padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
 }
 li{
   display: flex;

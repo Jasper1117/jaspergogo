@@ -25,10 +25,18 @@ const Work = () => {
         <img src={workbg2} alt="" className='bg2'/>
      </div>
      
-  <Swiper data-aos="fade-left"
+  <Swiper data-aos="fade-up"
   modules={[Navigation, Pagination, Scrollbar, A11y]}
-  spaceBetween={50}
-  slidesPerView={2}
+  spaceBetween={0}
+  breakpoints={{
+    700: {
+      slidesPerView: 1,
+    },
+    1050: {
+      slidesPerView: 2,
+    },
+  }}
+ 
   navigation
   pagination={{ clickable: true }}
   scrollbar={{ draggable: true }}

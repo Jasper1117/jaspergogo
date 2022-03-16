@@ -73,8 +73,11 @@ width: 700px;
     @media screen and (max-width:560px){
         width:500px
     }
-    @media screen and (max-width:460px){
-        width:450px
+    @media screen and (max-width:480px){
+        width:450px;
+        .education-con{
+        margin: 1rem 0;
+        }
     }
 
 `;
