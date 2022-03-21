@@ -15,7 +15,7 @@ const Skill = () => {
         <Tabs data-aos="fade-up">
             <div className="tableTitle">
                 <TabList>
-                <Tab>Front End</Tab>
+                <Tab>Frontend</Tab>
                 <Tab>Video Editor</Tab>
                 </TabList>
             </div>

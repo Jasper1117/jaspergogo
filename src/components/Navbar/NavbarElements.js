@@ -10,14 +10,22 @@ const NavbarElements = () => {
     const [click, setClick] = useState(false);
     const clickHandler =()=> setClick(!click);
     const closeMenu =()=> setClick(false);
-
+    const [navbar, setNavbar] = useState(false);
+    const changeBackground =()=>{
+        if(window.scrollY>=680){
+            setNavbar(true);
+        }else{
+            setNavbar(false);
+        }
+    }
+    window.addEventListener("scroll", changeBackground)
 
     return <NavbarElementsStyled>
-        <div className="main-bar">
+        <div className={navbar?"main-bar active" : "main-bar"} >
            <div className="nav-con">
-           <NavLink to="/" className="logo" onClick={closeMenu}>
+           <p className={navbar? "nameLogo active" : "nameLogo"} to="/" onClick={closeMenu}>
             Jasper
-            </NavLink>
+            </p>
             <div className="menu-icon" onClick={clickHandler}>
                     {click? <GrFormDown/> : <GrMenu/>}
             </div>
@@ -44,31 +52,41 @@ const NavbarElements = () => {
                 </ul>
            </div>
         </div>
+        
     </NavbarElementsStyled>;
 };
 const NavbarElementsStyled = styled.div`
-    .logo{
-        cursor: pointer;
-        text-decoration: none;
-        font-size: 1.7rem;
-        padding-left: 2rem;
-        color: #3F3D56;
-    }
+
    .main-bar{
        display: flex;
-       background: #ffffff;
+       background: #3F3D56;
        height: 60px;
        justify-content: center;
         align-items: center;
         font-size: 1.2rem;
         position: sticky;
         font-weight: 200;
-        color: #868593;
-        box-shadow: 0px -15px 30px .2px #888888;
+        color: white;
         width: 100%;
-       
-   
    }
+   .main-bar.active{
+       background-color:  #ffffff;
+       box-shadow: 0px -15px 30px .2px #888888;
+       color: #868593;
+   }
+
+   .nameLogo{
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 1.7rem;
+        padding-left: 2rem;
+        color: #ffffff;
+    }
+    .nameLogo.active{
+        
+        color: #3F3D56;
+    }
+
    .nav-con{
     display: flex;
     align-items: center;
@@ -129,24 +147,11 @@ const NavbarElementsStyled = styled.div`
        transition: all 0.2s ease-in-out;
        :hover{
            background-color: #3F3D56;
+           box-shadow: 0 0 5px white,
+                0 0 10px white,
+                0 0 13px white,
+                0 0 16px white;
        }
-   }
-
-   button{
-    display: flex;
-     padding: 0.3rem 1rem;
-     border-radius: 25px;
-     outline: none;
-     cursor: pointer;
-     border: none;
-     font-size: 1.1rem;
-     color: #3F3D56;
-     transition: all .4s ease-in-out;
-  
-     :hover{
-         color: white;
-             background-color: #3F3D56;
-}
    }
 
    .menu-icon{

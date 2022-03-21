@@ -139,6 +139,21 @@ const AboutElementStyle = styled.div`
        color: white;
        text-decoration: none;
        transition: all 0.2s ease-in-out;
+       animation: glowing 5s linear infinite;
+       @keyframes glowing{
+         0%,18%,20%,50%{
+          box-shadow: none;
+         }
+         18.1%,20.1%,50.1%,50%{
+          box-shadow: 0 0 5px white,
+                0 0 8px white,
+                0 0 11px white,
+                0 0 12px white;
+         }
+        100%{
+          box-shadow: none;
+        }
+       }
        :hover{
            box-shadow: 0px 0px 10px 1px white;;
            color: #364047;

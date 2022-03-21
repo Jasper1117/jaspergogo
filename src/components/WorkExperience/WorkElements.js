@@ -32,7 +32,7 @@ align-items: center;
 
 }
 img{
-    width: 70%;
+    width: 60%;
 
 }
 .card-con{
@@ -58,6 +58,10 @@ li{
 }
 .company{
   padding-top: 2rem;
+
+}
+img{
+  padding-top: 1rem;
 }
 `;
 export default WorkElements;

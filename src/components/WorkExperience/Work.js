@@ -18,7 +18,7 @@ const Work = () => {
   return <div className="work-con" id="working">
       <div data-aos="fade-up" className="title">
         <h2>Experiences</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, ad.</p>
+        <p></p>
      </div>
       <div className="img-con">
         <img src={workbg} alt="" className='bg1'/>
