@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         list-style: none;
         font-family: 'Josefin Sans', sans-serif;
+ 
     }
 `;
 

@@ -5,12 +5,14 @@ import FooterCon from '../components/Footer/FooterCon';
 import Navbar from '../components/Navbar/Navbar';
 import Skill from '../components/Skill/Skill';
 import Work from '../components/WorkExperience/Work';
+import NewAbout from '../components/NewAbout/newAbout';
 
 
 const Home = () => {
   return <>
     <Navbar/>
-    <About/>
+    <NewAbout/>
+    {/* <About/> */}
     <Education/>
     <Work/>
     <Skill/>

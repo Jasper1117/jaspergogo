@@ -59,14 +59,16 @@ const NavbarElementsStyled = styled.div`
 
    .main-bar{
        display: flex;
-       background: #3F3D56;
+       background: transparent;
+       /* background: #3F3D56; */
        height: 60px;
        justify-content: center;
         align-items: center;
         font-size: 1.2rem;
         position: sticky;
         font-weight: 200;
-        color: white;
+        /* color: white; */
+        color: black;
         width: 100%;
    }
    .main-bar.active{
