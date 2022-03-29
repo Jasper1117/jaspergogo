@@ -10,13 +10,13 @@ const newAbout = () => {
   return (
       
     <NewAboutStyled>
-            <div className="img">
-        <img src={sun} alt="" className='sun' /> 
-        <img src={bgWave} alt="" className='wave'/>
+        <div className="img">
+            <img src={sun} alt="" className='sun' /> 
+            <img src={bgWave} alt="" className='wave'/>
         </div>
 
 
-             <div className="about-con">
+        <div className="about-con">
           <div className="about-left">
             <img src={self} alt="" />
           </div>
@@ -82,7 +82,7 @@ img.sun{
 
 img.wave{
   position: relative;
- top:-13rem;
+ top:-16rem;
  width: 100%;
  height: 100vh;
 }
@@ -94,6 +94,7 @@ img.wave{
     position: relative;
     width: 70%;
     left: 20%;
+    color: #3b4349;
     .about-left{
       width: 50%;
       padding-left: 5rem;
@@ -105,7 +106,6 @@ img.wave{
     }
 
     .about-right{
-        padding-left: -10rem;
       width: 50%;
       display: flex;
       justify-content: flex-start;
@@ -194,7 +194,7 @@ img.wave{
        :hover{
            box-shadow: 0px 0px 10px 1px white;;
            color: #364047;
-           background-color: #acc9f3;
+           background-color: #E2A1A1;
            font-size: 1.6rem;
        }
   }

@@ -37,8 +37,8 @@ const SkillStyled = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    
+    height: 85vh;
+    padding-top: 16rem;
 
     .react-tabs__tab-list{
         padding: 2rem 0rem;

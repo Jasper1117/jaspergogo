@@ -8,10 +8,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import "./work.css"
-import workbg from "../../img/Group 2.svg"
-import workbg2 from "../../img/Group 3.svg"
 import Aos from "aos";
 import "aos/dist/aos.css";
+import bg from "../../img/wavebg.svg"
+
 
 const Work = () => {
   Aos.init({duration:1000});
@@ -21,8 +21,8 @@ const Work = () => {
         <p></p>
      </div>
       <div className="img-con">
-        <img src={workbg} alt="" className='bg1'/>
-        <img src={workbg2} alt="" className='bg2'/>
+
+        <img src={bg} alt="" className='bgimg'/>
      </div>
      
   <Swiper data-aos="fade-up"

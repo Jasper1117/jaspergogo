@@ -1,3 +1,4 @@
+
 .title{
     display: flex;
     flex-direction: column;
@@ -54,23 +55,18 @@
 
 .img-con{
     position: relative;
-    display: flex;
-}
-
-img.bg1{
-    position: absolute;
-    left: 17%;
-    width: 13%;
-}
-img.bg2{
-    position: absolute;
-    right: 17%;
-    bottom: -530px;
-    width: 11.5%;
+    bottom: -150px;
 }
 
 @media screen and (max-width:780px){
     .slide{
         width: 90%;
     }
+}
+img.bgimg{
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 0;
+    z-index: -100;
 }

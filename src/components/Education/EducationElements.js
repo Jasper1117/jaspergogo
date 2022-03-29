@@ -41,11 +41,10 @@ width: 700px;
 
 .education-con{
     border-radius: 20px;
-    background-color: #3F3D56;
-    color: white;
+    background-color: white;
     margin: 2rem;
     padding: 1rem 2rem;
-    box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 3px 15px 1px rgba(0, 0, 0, 0.2);
     font-weight: 300;
 
 }
@@ -53,8 +52,8 @@ width: 700px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: white;
-       
+        color: #3F3D56;
+       font-weight: 400;
         button{
             background:transparent ;
             outline: none;

@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import education from "../Education/EducationInfo"
 import EducationElements from './EducationElements';
-import educationbg from "../../img/educationbg2.svg"
 import Aos from "aos";
 import "aos/dist/aos.css";
+import workbg from "../../img/Group 2.svg"
+
 
 
 const Education = () => {
@@ -15,12 +16,17 @@ const Education = () => {
         <div data-aos="fade-up" className="title">
               <h2>Education</h2>
           </div>
+          <div className="imgCon">
+            <img src={workbg} alt="" className='bg1'/>
+            <img src={workbg} alt="" className='bg2'/>
+        </div>
       <div className="education-con">
           {
               education.map((q)=>{
                   return <EducationElements key={q.id} {...q}/>
               })
           }
+
       </div>
 
  
@@ -29,16 +35,29 @@ const Education = () => {
 
 const EducationStyled = styled.div`
     display: flex;
-    height: 60vh;
+    height: 70vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3rem 0rem;
+    margin: 11rem 0rem 7rem 0rem;
     position: relative;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     .title h2{
         border-bottom: 1px solid black;
     }
+
+img.bg1{
+    position: absolute;
+    top: 190px;
+    left: 19%;
+    width: 11%;
+}
+img.bg2{
+    position: absolute;
+    width: 13%;
+    bottom: 1%;
+    right: 19%;
+}
 `;
 
 

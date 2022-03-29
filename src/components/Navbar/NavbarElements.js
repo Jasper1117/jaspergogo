@@ -12,7 +12,7 @@ const NavbarElements = () => {
     const closeMenu =()=> setClick(false);
     const [navbar, setNavbar] = useState(false);
     const changeBackground =()=>{
-        if(window.scrollY>=680){
+        if(window.scrollY>=280){
             setNavbar(true);
         }else{
             setNavbar(false);
