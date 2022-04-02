@@ -37,8 +37,9 @@ const SkillStyled = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 85vh;
-    padding-top: 16rem;
+    height: 90vh;
+    padding-top: 21rem;
+
 
     .react-tabs__tab-list{
         padding: 2rem 0rem;
@@ -48,20 +49,24 @@ const SkillStyled = styled.div`
     }
     .react-tabs__tab{
         padding: 6px 5rem;
+        margin: 1rem 1.5em 0rem 1.5rem;
+        border-radius: 30px;
+        border: 1px solid #b8bec0;
+
        
     }
     .react-tabs__tab--selected{
-        border-bottom: 1px solid #aaa;
+        border: 1px solid #eec7c7;
         background: #fff;
-        border-color: #aaa;
-        border-top: none;
-        border-left: none;
-        color: white;
-        background-color: #62616D;
+        border: none;
+        color: #3F3D56;
+        background-color: #eec7c7;
         border-radius: 30px;
-        box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 10px 2px rgba(90, 90, 90, 0.2);
         
     }
+
+
     @media screen and (max-width:800px){
         height: 100vh;
     }

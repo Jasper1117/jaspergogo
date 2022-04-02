@@ -15,7 +15,9 @@ import bg from "../../img/wavebg.svg"
 
 const Work = () => {
   Aos.init({duration:1000});
-  return <div className="work-con" id="working">
+  return (
+
+      <div className="work-con" id="working">
       <div data-aos="fade-up" className="title">
         <h2>Experiences</h2>
         <p></p>
@@ -59,7 +61,7 @@ const Work = () => {
 
 </Swiper>
 </div>
-
+  )
 };
 
 export default Work;

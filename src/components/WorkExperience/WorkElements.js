@@ -37,21 +37,53 @@ img{
 }
 .card-con{
   width: 300px;
+  position: relative;
   border-radius : 30px;
-  background-color: #3F3D56;
+  background-color: whit;
   padding: 2rem 1rem;
   display: flex;
   justify-content: center;
+  box-shadow: 2px 3px 15px 1px rgba(82, 82, 82, 0.2);
+  overflow: hidden;
+}
+.card-con::before{
+  content: "";
+  width: 500px;
+  height: 500px;
+  top: -50px;
+  position: absolute;
+  background: linear-gradient(#ffcccc,#88bfd6);
+  z-index: -1;
+  opacity: 0.6;
+  animation: animate 2.5s linear infinite;
+}
+@keyframes animate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(365deg);
+  }
+}
+.card-con::after{
+  content: "";
+  position: absolute;
+  inset: 5px;
+  background-color: white;
+  z-index: -1;
+  border-radius : 25px;
 }
 li{
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  border:2px;
+  
 }
 .year{
   font-size: large;
-  border-bottom: 3px solid white;
+
 }
 .jobTitle{
   padding-top: 2rem;

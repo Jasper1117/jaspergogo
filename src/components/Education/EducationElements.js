@@ -41,10 +41,10 @@ width: 700px;
 
 .education-con{
     border-radius: 20px;
-    background-color: white;
+    background: linear-gradient(30deg,#ecd4d4,white,#b4dae9);
     margin: 2rem;
     padding: 1rem 2rem;
-    box-shadow: 2px 3px 15px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 20px 4px rgba(104, 104, 104, 0.2);
     font-weight: 300;
 
 }

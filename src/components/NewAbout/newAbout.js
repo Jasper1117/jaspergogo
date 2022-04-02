@@ -9,7 +9,7 @@ const newAbout = () => {
 
   return (
       
-    <NewAboutStyled>
+    <NewAboutStyled id="about">
         <div className="img">
             <img src={sun} alt="" className='sun' /> 
             <img src={bgWave} alt="" className='wave'/>
@@ -48,10 +48,6 @@ height: 100vh;
 width: 100%;
 position: relative;
 display: flex;
-img{
-
-    width: 100%;
-}
 .img{
     position: absolute;
     width: 100%;
@@ -200,49 +196,109 @@ img.wave{
   }
 }
 
-@media screen and (max-width:911px){
-      .about-left{
-      width: 50%;
-      padding-left: 5rem;
-      display: flex;
-      }
-      .about-right{
-      h1{
-        font-size: 4rem;
-      }
-      }
+@media screen and (max-width:1821px){
+  .about-con{
+    left: 15%;
+    top: -10%;
+  }
+}
+@media screen and (max-width:1650px){
+  img.wave{
+    top:-8rem;
+  }
+  .about-con{
+    left: 15%;
+    top: -5%;
+    .about-left{
+    img{
+      width: 80%;
     }
+  }
+  }
+}
+@media screen and (max-width:1400px){
+  height: 90vh;
+}
+@media screen and (max-width:1180px){
+  
+  height: 80vh;
+  img.wave{
+    top:-11rem;
+  }
+  .about-con{
+    left: 10%;
+  }
+}
 
-    @media screen and (max-width:600px){
-      .about-con{
+@media screen and (max-width:950px){
+  img.wave{
+    top:-2rem;
+  }
+  height: 90vh;
+  .about-con{
+        left: 0;
         padding-top: 6rem;
+        top: -80px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
         .about-left{
         padding-left: 0rem;
         justify-content: center;
         padding-bottom: 1rem;
-      img{
-        max-width: 200%;
-        height: auto;
-      }
-      }
-      .about-right{
+        img{
+          width:65%
+        }
+        }
+        .about-right{
         padding-right: 0rem;
         justify-content: center;
         align-items: center;
-        .aboutMe2{
-          display: none;
+
         }
 
+    }
+    @media screen and (max-width:600px){
+      img.wave{
+    top:1rem;
+  }
+
+  @keyframes sunMove {
+    0%{
+        left: -15%;
+        width: 30%;
+        top: 90px;
+        transform: rotate(0deg)
+    }
+    100%{
+        left: -8%;
+        width: 30%;
+        top: -90px;
+        transform: rotate(20deg)
+    }
+}
+      .about-con{
+        .about-left{
+       img{
+          width:50%
+        }
+      }
+      .about-right{
+        h1{
+         font-size: 4rem;
+        }
+        p{
+          font-size: medium;
+        }
       }
       }
-      
-     
+
     }
 
 
+
+  }
 `;
 
 export default newAbout
