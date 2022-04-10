@@ -45,13 +45,14 @@ img{
   justify-content: center;
   box-shadow: 2px 3px 15px 1px rgba(82, 82, 82, 0.2);
   overflow: hidden;
+  z-index: 1;
 }
 .card-con::before{
   content: "";
   width: 500px;
   height: 500px;
   top: -50px;
-  position: absolute;
+  position:absolute;
   background: linear-gradient(#ffcccc,#88bfd6);
   z-index: -1;
   opacity: 0.6;

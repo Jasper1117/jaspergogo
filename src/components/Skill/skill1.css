@@ -41,7 +41,7 @@
 }
 
 .react-inner {
-
+  z-index: 1;
   height: 20px;
   position: relative;
   border-radius: 10px;
@@ -116,7 +116,7 @@
 }
 
 .css-inner {
-
+  z-index: 1;
   height: 20px;
   position: relative;
   border-radius: 10px;
@@ -184,6 +184,7 @@
 .js-inner {
 
   height: 20px;
+  z-index: 1;
   background-color: #929292;
   position: relative;
   border-radius: 10px;
@@ -256,6 +257,7 @@
   position: relative;
   border-radius: 10px;
   animation: html-animate 1s forwards;
+  z-index: 1;
   overflow: hidden;
 }
 
