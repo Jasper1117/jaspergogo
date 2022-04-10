@@ -24,14 +24,14 @@ const ContactElement = () => {
 
 const ContactStyled = styled.div`
     width: 100%;
-   
+    height: 100vh;
     .ContactTop{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 2rem;
-      background-color: #91919133;
+      background: linear-gradient(30deg,#ecd4d4,white,#b4dae9);
       p{
         font-weight: 300;
         font-size: larger;

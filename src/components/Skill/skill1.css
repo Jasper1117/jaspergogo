@@ -1,296 +1,336 @@
-.fontEnd{
-    display: grid;
-    grid-template-columns: 1fr 2fr;;
-    box-shadow: 2px 2px 40px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
-    width: 700px;
-    height: 30vh;
-    align-items: center;
-    
+.fontEnd {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  ;
+  box-shadow: 2px 2px 40px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  width: 700px;
+  height: 30vh;
+  align-items: center;
+
 }
 
-.left{
+.left {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+
+
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  padding-left: 78px;
+
+}
+
+.react {
+  display: flex;
+
+  align-items: center;
+  padding-bottom: 1.3rem;
+}
+
+.react-outer {
+  width: 200px;
+  height: 20px;
+  border: 1px solid #929292;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.react-inner {
+
+  height: 20px;
+  position: relative;
+  border-radius: 10px;
+  animation: react-animate 1s forwards;
+  overflow: hidden;
+}
+
+@keyframes react-animate {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 155px;
+  }
+}
+
+.react-inner::before {
+  content: "";
+  width: 500px;
+  height: 500px;
+  top: -100px;
+  left: -300px;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(45deg, #ffcccc, #88bfd6);
+  animation: animate 2.5s linear infinite;
+
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(365deg);
+  }
+}
+
+.react-inner::after {
+
+  content: "";
+  position: absolute;
+  inset: 5px;
+  background-color: white;
+  z-index: -1;
+  border-radius: 25px;
+}
+
+.frontEndLogo {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  color: #3F3D56;
+}
+
+.css {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.3rem;
+
+}
+
+.css-outer {
+  width: 200px;
+  height: 20px;
+  border: 1px solid #929292;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.css-inner {
+
+  height: 20px;
+  position: relative;
+  border-radius: 10px;
+  animation: css-animate 1.1s forwards;
+  overflow: hidden;
+}
+
+@keyframes css-animate {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 140px;
+  }
+}
+
+.css-inner::before {
+  content: "";
+  width: 500px;
+  height: 500px;
+  top: -100px;
+  left: -300px;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(45deg, #ffcccc, #88bfd6);
+  animation: animate 2.5s linear infinite;
+
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(365deg);
+  }
+}
+
+.css-inner::after {
+
+  content: "";
+  position: absolute;
+  inset: 5px;
+  background-color: white;
+  z-index: -1;
+  border-radius: 25px;
+}
+
+.js {
+  display: flex;
+  align-items: center;
+
+}
+
+.js-outer {
+  width: 200px;
+  height: 20px;
+  border: 1px solid #929292;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.js-inner {
+
+  height: 20px;
+  background-color: #929292;
+  position: relative;
+  border-radius: 10px;
+  animation: js-animate 1.1s forwards;
+  overflow: hidden;
+}
+
+@keyframes js-animate {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 110px;
+  }
+}
+
+.js-inner::before {
+  content: "";
+  width: 500px;
+  height: 500px;
+  top: -100px;
+  left: -112px;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(45deg, #ffcccc, #88bfd6);
+  animation: animate 2.5s linear infinite;
+
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(365deg);
+  }
+}
+
+.js-inner::after {
+
+  content: "";
+  position: absolute;
+  inset: 5px;
+  background-color: white;
+  z-index: -1;
+  border-radius: 25px;
+}
+
+
+.html {
+  display: flex;
+  align-items: center;
+
+}
+
+.html-outer {
+  width: 200px;
+  height: 20px;
+  border: 1px solid #929292;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.html-inner {
+
+  height: 20px;
+  background-color: #929292;
+  position: relative;
+  border-radius: 10px;
+  animation: html-animate 1s forwards;
+  overflow: hidden;
+}
+
+@keyframes html-animate {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 180px;
+  }
+}
+
+
+.html-inner::before {
+  content: "";
+  width: 500px;
+  height: 500px;
+  top: -100px;
+  left: -50px;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(45deg, #ffcccc, #88bfd6);
+  animation: animate 2.5s linear infinite;
+
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(365deg);
+  }
+}
+
+.html-inner::after {
+
+  content: "";
+  position: absolute;
+  inset: 5px;
+  background-color: white;
+  z-index: -1;
+  border-radius: 25px;
+}
+
+@media screen and (max-width:750px) {
+  .fontEnd {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
-  
-    
-}
-.right{
-    display: flex;
-    flex-direction: column;
-    padding-left: 78px;
-
-}
-
-.react{
-    display: flex;
-
+    justify-content: center;
     align-items: center;
-    padding-bottom: 1.3rem;
-}
+    width: 100%;
+    height: 400px;
 
-.react-outer{
-    width: 200px;
-    height: 20px;
-    border: 1px solid #929292;
-    border-radius: 10px;
-    position: absolute;
-}
-.react-inner{
-    
-    height: 20px;
-    position: relative;
-    border-radius: 10px;
-    animation: react-animate 1s forwards;
-    overflow: hidden;
-}
-
-@keyframes react-animate{
-    0%{width: 0px;}
-    100%{width: 155px;}
-}
-
-.react-inner::before{
-    content: "";
-    width: 500px;
-    height: 500px;
-    top: -100px;
-    left: -300px;
-    position: absolute;
-    z-index: 1;
-    background: linear-gradient(45deg, #ffcccc,#88bfd6);
-    animation: animate 2.5s linear infinite;
-    
-}
-@keyframes animate {
-    0%{
-      transform: rotate(0deg);
-    }
-    100%{
-      transform: rotate(365deg);
-    }
   }
 
-  .react-inner::after{
+  .left {
+    padding: 0;
+    width: 280px;
 
-    content: "";
-    position: absolute;
-    inset: 5px;
-    background-color: white;
-    z-index: -1;
-    border-radius : 25px;
   }
 
-.frontEndLogo{
-    font-size: 4rem;
-    display: flex;
-    align-items: center;
-    padding-right: 1rem;
-    color: #3F3D56;
-}
-
-.css{
-    display: flex;
-    align-items: center;
-    padding-bottom: 1.3rem;
- 
-}
-
-.css-outer{
-    width: 200px;
-    height: 20px;
-    border: 1px solid #929292;
-    border-radius: 10px;
-    position: absolute;
-}
-.css-inner{
-    
-    height: 20px;
-    position: relative;
-    border-radius: 10px;
-    animation: css-animate 1.1s forwards;
-    overflow: hidden;
-}
-
-@keyframes css-animate{
-    0%{width: 0px;}
-    100%{width: 140px;}
-}
-
-.css-inner::before{
-    content: "";
-    width: 500px;
-    height: 500px;
-    top: -100px;
-    left: -300px;
-    position: absolute;
-    z-index: 1;
-    background: linear-gradient(45deg, #ffcccc,#88bfd6);
-    animation: animate 2.5s linear infinite;
-    
-}
-@keyframes animate {
-    0%{
-      transform: rotate(0deg);
-    }
-    100%{
-      transform: rotate(365deg);
-    }
+  .right {
+    padding-left: 0px;
+    width: 280px;
   }
 
-  .css-inner::after{
+  .css,
+  .react,
+  .html,
+  .js {
+    padding-bottom: 1rem;
 
-    content: "";
-    position: absolute;
-    inset: 5px;
-    background-color: white;
-    z-index: -1;
-    border-radius : 25px;
+
   }
-
-.js{
-    display: flex;
-    align-items: center;
- 
-}
-
-.js-outer{
-    width: 200px;
-    height: 20px;
-    border: 1px solid #929292;
-    border-radius: 10px;
-    position: absolute;
-}
-.js-inner{
-    
-    height: 20px;
-    background-color: #929292;
-    position: relative;
-    border-radius: 10px;
-    animation: js-animate 1.1s forwards;
-    overflow: hidden;
-}
-
-@keyframes js-animate{
-    0%{width: 0px;}
-    100%{width: 110px;}
-}
-
-.js-inner::before{
-    content: "";
-    width: 500px;
-    height: 500px;
-    top: -100px;
-    left: -112px;
-    position: absolute;
-    z-index: 1;
-    background: linear-gradient(45deg, #ffcccc,#88bfd6);
-    animation: animate 2.5s linear infinite;
-    
-}
-@keyframes animate {
-    0%{
-      transform: rotate(0deg);
-    }
-    100%{
-      transform: rotate(365deg);
-    }
-  }
-
-  .js-inner::after{
-
-    content: "";
-    position: absolute;
-    inset: 5px;
-    background-color: white;
-    z-index: -1;
-    border-radius : 25px;
-  }
-
-
-.html{
-    display: flex;
-    align-items: center;
- 
-}
-
-.html-outer{
-    width: 200px;
-    height: 20px;
-    border: 1px solid #929292;
-    border-radius: 10px;
-    position: absolute;
-}
-.html-inner{
-    
-    height: 20px;
-    background-color: #929292;
-    position: relative;
-    border-radius: 10px;
-    animation: html-animate 1s forwards;
-    overflow: hidden;
-}
-
-@keyframes html-animate{
-    0%{width: 0px;}
-    100%{width: 180px;}
-}
-
-
-.html-inner::before{
-    content: "";
-    width: 500px;
-    height: 500px;
-    top: -100px;
-    left: -50px;
-    position: absolute;
-    z-index: 1;
-    background: linear-gradient(45deg, #ffcccc,#88bfd6);
-    animation: animate 2.5s linear infinite;
-    
-}
-@keyframes animate {
-    0%{
-      transform: rotate(0deg);
-    }
-    100%{
-      transform: rotate(365deg);
-    }
-  }
-
-  .html-inner::after{
-
-    content: "";
-    position: absolute;
-    inset: 5px;
-    background-color: white;
-    z-index: -1;
-    border-radius : 25px;
-  }
-
-@media screen and (max-width:750px){
-    .fontEnd{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 400px;
-       
-    }
-    .left{
-        padding: 0;
-        width: 280px;
-        
-    }
-    .right{
-        padding-left: 0px;
-        width: 280px;
-    }
-    .css, .react, .html,.js{
-        padding-bottom:1rem;
-
-
-    }
 }

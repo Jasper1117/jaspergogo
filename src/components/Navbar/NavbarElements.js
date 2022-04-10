@@ -10,20 +10,24 @@ const NavbarElements = () => {
     const [click, setClick] = useState(false);
     const clickHandler =()=> setClick(!click);
     const closeMenu =()=> setClick(false);
-    const [navbar, setNavbar] = useState(false);
-    const changeBackground =()=>{
-        if(window.scrollY>=140){
-            setNavbar(true);
-        }else{
-            setNavbar(false);
-        }
-    }
-    window.addEventListener("scroll", changeBackground)
+    // const [navbar, setNavbar] = useState(false);
+    // const changeBackground =()=>{
+    //     if(window.scrollY>=120){
+    //         setNavbar(true);
+    //     }
+    //     if(window.screen.width<=963){
+    //         setNavbar(true);
+    //     }
+    //     else{
+    //         setNavbar(false);
+    //     }
+    // }
+    // window.addEventListener("scroll", changeBackground)
 
     return <NavbarElementsStyled>
-        <div className={navbar?"main-bar active" : "main-bar"} >
+        <div className="main-bar active">
            <div className="nav-con">
-           <p className={navbar? "nameLogo active" : "nameLogo"} to="/" onClick={closeMenu}>
+           <p className="nameLogo active" to="/" onClick={closeMenu}>
             Jasper
             </p>
             <div className="menu-icon" onClick={clickHandler}>
@@ -72,7 +76,7 @@ const NavbarElementsStyled = styled.div`
         width: 100%;
    }
    .main-bar.active{
-       background-color:  #ffffff;
+       background-color: rgba(255, 255, 255, 0.96);
        box-shadow: 0px -15px 30px .2px #888888;
        color: #868593;
    }

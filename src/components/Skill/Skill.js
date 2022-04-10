@@ -40,7 +40,6 @@ const SkillStyled = styled.div`
     height: 90vh;
     padding-top: 21rem;
 
-
     .react-tabs__tab-list{
         padding: 2rem 0rem;
         display: flex;
@@ -67,9 +66,18 @@ const SkillStyled = styled.div`
     }
 
 
-    @media screen and (max-width:800px){
+    /* @media screen and (max-width:800px){
         height: 100vh;
     }
+    @media screen and (max-width:750px) {
+        .react-tabs__tab-panel--selected{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             width: 100%;
+
+    }
+} */
 
 `;
 

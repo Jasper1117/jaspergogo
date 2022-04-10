@@ -25,7 +25,7 @@ const newAbout = () => {
             <h1 className="typing">Jasper Xu</h1>
           
               <p>People always say never too late to learn. I will say never too late to <b>learn and change.</b></p>
-              <p className='aboutMe2'>I work as a video director in the pass few years. However, I'm trying to become a frontend developer. I learned coding by myself in the pass few months. This web is the final result of my self-learning. </p>
+              <p className='aboutMe2'>I work as a video director in the pass few years. However, I'm trying to become a frontend developer. I learned coding by myself in the pass few months. Because I enjoy creating things. </p>
               <NavLink to="/contact" className="contact" > Contact
     
               </NavLink>
@@ -237,7 +237,7 @@ img.wave{
   height: 90vh;
   .about-con{
         left: 0;
-        padding-top: 6rem;
+        padding-top: 10rem;
         top: -80px;
         flex-direction: column;
         justify-content: center;
@@ -248,7 +248,7 @@ img.wave{
         justify-content: center;
         padding-bottom: 1rem;
         img{
-          width:65%
+          width:50%
         }
         }
         .about-right{

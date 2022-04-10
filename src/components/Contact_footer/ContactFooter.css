@@ -1,21 +1,23 @@
-footer{
+footer {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    color: rgb(74, 80, 101);
 }
-.mediaLogo-con{
+
+.mediaLogo-con {
     padding-top: 0.7rem;
     font-size: 2rem;
 }
-.mediaLogo{
-   margin: 0rem 2rem;
-   text-decoration: none;
-   color: white;
+
+.mediaLogo {
+    margin: 0rem 2rem;
+    text-decoration: none;
+    color: rgb(74, 80, 101);
 }
 
-.footerLink{
+.footerLink {
     padding-top: 1rem;
     display: flex;
     flex-direction: row;
@@ -23,66 +25,75 @@ footer{
     display: flex;
     flex-direction: row;
     font-size: 1.2rem;
-    
+
 }
-.footerlink1{
+
+.footerlink1 {
     display: flex;
     flex-direction: row;
 }
-.footerlink2{
+
+.footerlink2 {
     display: flex;
     flex-direction: row;
 }
-.footerLi .contactFooter{
+
+.footerLi .contactFooter {
     text-decoration: none;
-    color: white;
+    color: rgb(74, 80, 101);
     transition: all 0.3s ease-in-out;
 }
-.footerLi .contactFooter:hover{
+
+.footerLi .contactFooter:hover {
     cursor: pointer;
     color: #9cbbeb;
 }
 
-.footerLi{
+.footerLi {
     display: flex;
     padding: 0.1rem 2rem 0rem 2rem;
     transition: all 0.3s ease-in-out;
 }
 
-.footerLi:hover{
+.footerLi:hover {
     cursor: pointer;
     color: #9cbbeb;
 }
 
-@media screen and (max-width:650px){
-    footer{
+@media screen and (max-width:650px) {
+    footer {
         flex-direction: row;
     }
-    .footerLink{
+
+    .footerLink {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .footerlink1{
+
+    .footerlink1 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .footerlink2{
+
+    .footerlink2 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 }
 
-@media screen and (max-width:500px){
-    footer{
+@media screen and (max-width:500px) {
+    footer {
         flex-direction: column;
     }
-    .footerLink{
+
+    .footerLink {
         padding-top: 0.4rem;
     }
-    .mediaLogo-con{
+
+    .mediaLogo-con {
         padding-top: 0.3rem;
     }
 }

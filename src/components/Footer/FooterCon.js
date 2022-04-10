@@ -37,9 +37,10 @@ const FooterCon = () => {
 const FooterStyled = styled.div`
 width: 100%;
 
-background-color: #62616D;
+background: linear-gradient(30deg,#ecd4d4,white,#b4dae9);
 margin-top: 3rem;
 font-weight: 300;
+
 
 `;
 
