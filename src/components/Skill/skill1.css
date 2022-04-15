@@ -306,6 +306,7 @@
 }
 
 @media screen and (max-width:750px) {
+
   .fontEnd {
     display: flex;
     flex-direction: column;
@@ -313,7 +314,6 @@
     align-items: center;
     width: 100%;
     height: 400px;
-
   }
 
   .left {
@@ -334,5 +334,18 @@
     padding-bottom: 1rem;
 
 
+  }
+}
+
+@media screen and (max-width:650px) {
+  .react-tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fontEnd {
+    padding: 2.5rem;
   }
 }

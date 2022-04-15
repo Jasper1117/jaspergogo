@@ -244,6 +244,7 @@
 .pr-outer {
   width: 200px;
   height: 20px;
+  border: 1px solid #929292;
   border-radius: 10px;
   position: absolute;
 }
@@ -328,9 +329,18 @@
   .ps,
   .pr {
     padding-bottom: 1rem;
+  }
+}
 
-
+@media screen and (max-width:650px) {
+  .react-tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .adobeLogo {}
+  .videoEdit {
+    padding: 2.5rem;
+  }
 }

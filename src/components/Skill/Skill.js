@@ -10,7 +10,10 @@ import "aos/dist/aos.css";
 const Skill = () => {
     Aos.init({duration:1000});
   return <SkillStyled id="skills">
-      <h2 data-aos="fade-up">What I can handle</h2>
+      <div className="skillTitle" data-aos="fade-up">
+      <h2>My Skills</h2>
+      <p>- What I know -</p>
+      </div>
         <div className="tabs">
         <Tabs data-aos="fade-up">
             <div className="tableTitle">
@@ -38,8 +41,14 @@ const SkillStyled = styled.div`
     justify-content: center;
     align-items: center;
     height: 90vh;
-    padding-top: 21rem;
+    padding-top: 20rem;
+    padding-bottom: 3rem;
 
+    .skillTitle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .react-tabs__tab-list{
         padding: 2rem 0rem;
         display: flex;
@@ -64,7 +73,24 @@ const SkillStyled = styled.div`
         box-shadow: 0px 0px 10px 2px rgba(90, 90, 90, 0.2);
         
     }
+    @media screen and (max-width:1340px) {
+        padding-top: 15rem;
+        padding-bottom: 3rem;
+    }
+    @media screen and (max-width:1100px) {
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+    }
+    @media screen and (max-width:780px) {
+        padding-top: 5rem;
+    }
 
+    @media screen and (max-width:600px) {
+  .react-tabs__tab-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
     /* @media screen and (max-width:800px){
         height: 100vh;

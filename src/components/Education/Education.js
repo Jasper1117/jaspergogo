@@ -15,6 +15,8 @@ const Education = () => {
   return <EducationStyled id="educations">
         <div data-aos="fade-up" className="title">
               <h2>Education</h2>
+              <p>My major at university is <b>Creative Media</b>, which encourages students to finish their art work combined with different knowledge from various fields.
+              Such as <b>computer science and architecture</b>. Therefore, I learned some JavaScript when I was in college.</p>
           </div>
           <div className="imgCon">
             <img src={workbg} alt="" className='bg1'/>
@@ -42,8 +44,15 @@ const EducationStyled = styled.div`
     margin: 11rem 0rem 7rem 0rem;
     position: relative;
     padding-bottom: 2rem;
+    .title p{
+        width: 60%;
+        text-align: center;
+        padding-bottom: 1.5rem;
+        font-size:medium;
+    }
     .title h2{
         border-bottom: 1px solid black;
+        padding-bottom: 1rem;
     }
 
 img.bg1{
@@ -57,6 +66,16 @@ img.bg2{
     width: 13%;
     bottom: 1%;
     right: 19%;
+}
+
+@media screen and (max-width:980px){
+    margin: 9rem 0rem 7rem 0rem;
+}
+@media screen and (max-width:750px){
+    margin: 5rem 0rem 5rem 0rem;
+}
+@media screen and (max-width:400px){
+    margin: 0rem 0rem 0rem 0rem;
 }
 `;
 

@@ -245,10 +245,12 @@ img.wave{
         width: 100%;
         .about-left{
         padding-left: 0rem;
+        padding-top: 4rem;
         justify-content: center;
         padding-bottom: 1rem;
         img{
           width:50%
+          
         }
         }
         .about-right{
@@ -281,7 +283,7 @@ img.wave{
       .about-con{
         .about-left{
        img{
-          width:50%
+          width:60%
         }
       }
       .about-right{
@@ -295,9 +297,15 @@ img.wave{
       }
 
     }
-
-
-
+  }
+  @media screen and (max-width:500px){
+    .about-con{
+        .about-left{
+       img{
+          width:100%
+        }
+      }
+    }
   }
 `;
 

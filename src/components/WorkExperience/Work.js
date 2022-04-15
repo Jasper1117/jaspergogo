@@ -20,7 +20,7 @@ const Work = () => {
       <div className="work-con" id="working">
       <div data-aos="fade-up" className="title">
         <h2>Experiences</h2>
-        <p></p>
+        <p>Though I work as a video director or editor in the past few years, I think I can handle programming as well.</p>
      </div>
       <div className="img-con">
 

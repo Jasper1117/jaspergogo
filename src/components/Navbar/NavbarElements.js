@@ -38,10 +38,10 @@ const NavbarElements = () => {
                     <li><Link to="about" onClick={closeMenu} smooth={true} duration={400}>About</Link></li>
                   
                
-                    <li><Link to="educations" onClick={closeMenu} smooth={true} duration={400}>Educations</Link></li>
+                    <li><Link to="educations" onClick={closeMenu} smooth={true} duration={400}>Education</Link></li>
             
             
-                    <li><Link to="working" onClick={closeMenu} smooth={true} duration={400}>Experiences</Link></li>
+                    <li><Link to="working" onClick={closeMenu} smooth={true} duration={400}>Experience</Link></li>
 
                     <li><Link to="skills" onClick={closeMenu}smooth={true} duration={400}>Skills</Link></li>
 
