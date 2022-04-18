@@ -166,7 +166,6 @@ img.wave{
       height: 5vh;
       margin: 2rem 0rem;
        border-radius: 50px;
-       outline: 1px solid white;
        background-color: #96B9CA;
        padding: 0.3rem 1.2rem;
        color: white;
@@ -287,7 +286,7 @@ img.wave{
     .about-con{
         .about-left{
        img{
-          width:80%
+          width:75%
         }
       }
     }

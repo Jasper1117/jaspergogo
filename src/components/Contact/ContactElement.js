@@ -64,6 +64,10 @@ const ContactStyled = styled.div`
       }
 
     }
+    @media screen and (max-width:400px){
+      .contact-right{
+      }
+    }
 `;
 
 export default ContactElement;

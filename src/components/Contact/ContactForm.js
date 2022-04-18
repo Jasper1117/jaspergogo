@@ -77,6 +77,7 @@ const FormStyled = styled.form`
         border-radius: 20px;
         box-shadow: 1px 2px 10px -2px rgba(0, 0, 0, 0.2);
         color: #333333;
+        
     .fromGroup{
         display: flex;
         flex-direction: column;
@@ -123,8 +124,11 @@ const FormStyled = styled.form`
     }
     @media screen and (max-width:500px){
         textarea{
-            max-width: 350px;
-            min-width: 350px;
+            -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    max-width: 250px;
+        min-width: 250px;
         }
         
     }
