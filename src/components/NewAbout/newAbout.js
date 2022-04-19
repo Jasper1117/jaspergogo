@@ -202,27 +202,31 @@ img.wave{
 }
 @media screen and (max-width:1400px){
   height: 90vh;
+  img.wave{
+    top:-14rem;
+  }
 }
 @media screen and (max-width:1180px){
   
   height: 80vh;
   img.wave{
-    top:-11rem;
+    top:-16rem;
   }
   .about-con{
+    top: 5%;
     left: 10%;
   }
 }
 
 @media screen and (max-width:950px){
   img.wave{
-    top:-2rem;
+    top:-6rem;
   }
   height: 90vh;
   .about-con{
         left: 0;
         padding-top: 10rem;
-        top: -80px;
+        top: -60px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -247,7 +251,7 @@ img.wave{
     }
     @media screen and (max-width:600px){
       img.wave{
-    top:1rem;
+    top:-1rem;
   }
 
   @keyframes sunMove {
