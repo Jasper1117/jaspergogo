@@ -25,7 +25,7 @@ const newAbout = () => {
             <h1 className="typing">Jasper Xu</h1>
           
               <p>People always say never too late to learn. I will say never too late to <b>learn and change.</b></p>
-              <p className='aboutMe2'>I work as a video director in the pass few years. However, I'm trying to become a frontend developer. I learned coding by myself in the pass few months. Because I enjoy creating things. </p>
+              <p className='aboutMe2'>I have been working as a Video Director in the past few years. However, I'm trying to become a frontend developer. I have been learning coding in the past few months. Because I enjoy creating things. </p>
               <NavLink to="/contact" className="contact" > Contact
     
               </NavLink>
